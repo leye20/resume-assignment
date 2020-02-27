@@ -1,0 +1,162 @@
+html {
+    background-color: hsl(180, 100%, 94%);
+    font-family: "crimson", "Open Sans", Verdana, "Geneva", Tahoma, sans-serif;
+    /* background-image: url(../image/transparent-background-water-bubble-png-images-bubbles-vector-png-260_260.png); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+head{
+    background-origin: padding-box;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    /* font-size: 60px; */
+}
+h2 {
+    text-align: justify;
+    /* font-style: italic; */
+    /* font-size: 20px; */
+    /* margin: 20px, 20px, 20px, auto; */
+}
+
+h4{
+    /* text-align: left; */
+    /* font-style: oblique; */
+    font-size: 15px;
+}
+h5{
+    font-size: 12px;
+}
+h6{
+    font-size: 15px;
+    font-weight: bold;
+}
+.leftCol{
+    float:left;
+    width:20%;
+}
+.rightCol{
+    float:left;
+    width:70%;
+}
+.job{
+    margin: 3%;
+    margin-bottom: 8%;
+    padding: 5%;
+}
+ul{
+    display: block;
+    list-style-type: circle;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+/* .job1{
+    width: 30%;
+    float: right;
+}
+.date1{
+    width: 10%;
+    float: left; */
+/* } */
+p{
+    /* text-align: center; */
+    font-size: 12px;
+}
+.unordered{
+    padding-left:15%;
+}
+
+nav {
+    background: #55d6aa;
+}
+  
+nav::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: inline-block;
+    margin-right: 70px;
+    padding-top: 30px;
+    
+    position: relative;
+}
+
+nav a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+nav a:hover{
+    color: #000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+  
+    position: absolute;
+    top: 10%;
+    width: 0%;
+  
+    transition: all ease-in-out 300ms;
+}
+  
+nav a:hover::before {
+    width: 100%;
+}
+/* /
+header {
+    background-color: azure;
+    position: fixed;
+    top:  0;
+    width: 100%;
+    z-index: 1000;
+}
+li {
+    float: left;
+    list-style-type: none;
+    margin: 10px;
+    width: 20%;
+    margin: 0 auto;
+}
+/*  /
+aside {
+    float: right;
+    width: 20%;
+    background-color: aqua;
+    position: relative;
+    top: 50px;
+}
+*/
+body{
+    margin: 10px;
+    padding: 5px;
+}
+.ft {
+    position: fixed;
+    display: inline-block;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    color: darkgrey;
+    text-align: center;
+    background-color: deepskyblue;
+    padding: 5px;
+}
+.ft a{
+    color: black;
+}
