@@ -1,53 +1,82 @@
-html {
-    background-color: hsl(180, 100%, 94%);
-    font-family: "crimson", "Open Sans", Verdana, "Geneva", Tahoma, sans-serif;
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-head{
-    background-origin: padding-box;
-}
+/* @media only screen and (max-width: 767px) { */
+    /* phones */
 
-.about{
-    text-align: center;
-}
+    html {
+        background-color: hsl(180, 100%, 94%);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        font-family: "Ubuntu", "Open Sans", Verdana, "Geneva", Tahoma, sans-serif;
+    }
 
-h1 {
-    text-align: center;
-    font-weight: bold;
-    /* font-size: 60px; */
-}
-h2 {
-    text-align: justify;
-    /* font-style: italic; */
-    /* font-size: 20px; */
-    /* margin: 20px, 20px, 20px, auto; */
-}
-h3{
-    font-weight: bold;
-    text-align: center;
-
-}
-
-h4{
-    /* text-align: left; */
-    /* font-style: oblique; */
-    font-size: 15px;
-}
-h5{
-    font-size: 12px;
-}
-h6{
-    font-size: 15px;
-    font-weight: bold;
-}
-html{
-    background-image: url("../image/scenic-view-of-mountain-during-daytime-1482927.jpg");
+.mainhtml{
+    background: url("../image/scenic-view-of-mountain-during-daytime-1482927.jpg");
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
 }
 
+.new{
+    background: linear-gradient(to bottom right, rgba(164, 238, 222, 0.5), rgba(82, 184, 179, 0.5) );
+}
+
+.about{
+    background: linear-gradient(to bottom right, rgba(164, 238, 222, 0.5), rgba(82, 184, 179, 0.5) );
+}
+
+.sandc{
+    background: linear-gradient(to bottom right, rgba(164, 238, 222, 0.5), rgba(82, 184, 179, 0.5) );
+}
+
+header{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.About{
+    text-align: center;
+    max-width: 600px;
+    margin: 64px auto;
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+h2 {
+    text-align: justify;
+    
+}
+h3{
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+h4{
+    color: rgb(61, 61, 170);
+    font-weight: bold;
+    /* text-align: left; */
+    /* font-style: oblique; */
+    font-size: 17px;
+}
+h5{
+    font-size: 12px;
+    padding-top: 10px;
+    text-align: left;
+}
+h6{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* 
 .leftCol{
     float:left;
     width:20%;
@@ -55,7 +84,7 @@ html{
 .rightCol{
     float:left;
     width:70%;
-}
+} */
 .job{
     margin: 3%;
     margin-bottom: 8%;
@@ -71,20 +100,32 @@ ul{
     padding-left: 40px;
 }
 
-p{
+.paragraph {
     /* text-align: center; */
-    font-size: 12px;
+    font-size: 15px;
+    padding: 15px;
+    
+}
+
+button{
+    background-color: rgba(82, 184, 179, 0.8);
+    height: 30px;
+    width: 80px;
+    font-style: italic;
+    font-weight: bold;
 }
 .unordered{
-    padding-left:15%;
+    padding-left:1%;
+    text-align: justify;
 }
 /* START NAVBAR */
 nav {
-    background: #55d6aa;
+    background: rgba(82, 184, 179, 0.8);
     display: flex;
     justify-content: space-around;
     height: 10vh; 
-    align-items: center; 
+    align-items: center;
+    padding: 32px; 
 }
   
 /* nav::after {
@@ -93,6 +134,10 @@ nav {
     clear: both;
 } */
 
+.flex-header{
+    flex-wrap: wrap;
+    height: auto;
+}
 nav a{
     /* display: inline-block; */
     /* margin-right: 70px; */
@@ -142,10 +187,10 @@ body{
     bottom: 0px;
     width: 100%;
     height: auto;
-    color: darkgrey;
+    color: rgb(11, 11, 58);
     text-align: center;
-    background-color: deepskyblue;
-    padding: 5px;
+    background-color: rgb(27, 174, 223);
+    padding: 15px;
 }
 .foot a{
     color: black;
@@ -153,9 +198,12 @@ body{
 
 .flexcontainer {
     display: block;
+    font-weight: bold;
 }
 form {
     overflow: hidden;
+    max-width: 600px;
+    margin: 64px auto;
   }
   label{
       width: 70vw;
@@ -171,8 +219,27 @@ form {
     box-sizing: border-box;
 
     width: 100%;
-  }
+    }
 
+
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    height: 90vh;
+    }
+
+    .workexp{
+        color: rgb(61, 61, 170);
+        font-weight: bolder;
+        font-size: 30px;
+        text-align: center;
+        text-size-adjust: 30px;
+        height: 8vh;
+        padding-top: 20px;
+
+    }
+/* } */
 @media only screen and (min-width: 600px) {
     /* DESKTOP */
     .flexcontainer{
@@ -181,3 +248,11 @@ form {
         text-align: center;
     }
   }
+
+  @media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
