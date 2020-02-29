@@ -35,7 +35,7 @@ header{
 .About{
     text-align: center;
     max-width: 600px;
-    margin: 64px auto;
+    margin: 120px auto 64px;
     border-top: 2px solid grey;
     border-bottom: 2px solid grey;
 }
@@ -66,14 +66,15 @@ h4{
     /* font-style: oblique; */
     font-size: 17px;
 }
-h5{
-    font-size: 12px;
+.date{
+    font-size: 13px;
     padding-top: 10px;
     text-align: left;
 }
 h6{
     font-size: 15px;
     font-weight: bold;
+    color: rgb(61, 61, 170);
 }
 
 /* 
@@ -94,7 +95,7 @@ ul{
     display: block;
     list-style-type: circle;
     margin-top: 1em;
-    margin-bottom: 1 em;
+    margin-bottom: 1em;
     margin-left: 0;
     margin-right: 0;
     padding-left: 40px;
@@ -123,6 +124,10 @@ nav {
     background: rgba(82, 184, 179, 0.8);
     display: flex;
     justify-content: space-around;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 15px;
     height: 10vh; 
     align-items: center;
     padding: 32px; 
@@ -137,6 +142,7 @@ nav {
 .flex-header{
     flex-wrap: wrap;
     height: auto;
+    font-weight: bold;
 }
 nav a{
     /* display: inline-block; */
@@ -189,11 +195,15 @@ body{
     height: auto;
     color: rgb(11, 11, 58);
     text-align: center;
-    background-color: rgb(27, 174, 223);
+    /* background-color: rgb(27, 174, 223); */
+    background-color: rgba(27, 174, 223, 0.5);
     padding: 15px;
+    
 }
 .foot a{
     color: black;
+    margin: 0 10px;
+    font-size: 35px;
 }
 
 .flexcontainer {
@@ -214,8 +224,6 @@ form {
     float:left;
   }
   #text{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 
     width: 100%;
@@ -224,7 +232,7 @@ form {
 
   .container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     height: 90vh;
     }
@@ -234,7 +242,6 @@ form {
         font-weight: bolder;
         font-size: 30px;
         text-align: center;
-        text-size-adjust: 30px;
         height: 8vh;
         padding-top: 20px;
 
@@ -247,6 +254,11 @@ form {
         justify-content: space-between;
         text-align: center;
     }
+    .container {
+       
+        grid-template-columns: auto auto;
+       
+        }
   }
 
   @media only screen and (min-width: 768px) {
