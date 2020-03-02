@@ -1,12 +1,13 @@
 /* @media only screen and (max-width: 767px) { */
     /* phones */
+/*Setting the tone for the background for all pages*/
 
-    html {
-        background-color: hsl(180, 100%, 94%);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        font-family: "Ubuntu", "Open Sans", Verdana, "Geneva", Tahoma, sans-serif;
-    }
+html {
+    background-color: hsl(180, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: "Ubuntu", "Open Sans", Verdana, "Geneva", Tahoma, sans-serif;
+}
 
 .mainhtml{
     background: url("../image/scenic-view-of-mountain-during-daytime-1482927.jpg");
@@ -27,6 +28,8 @@
     background: linear-gradient(to bottom right, rgba(164, 238, 222, 0.5), rgba(82, 184, 179, 0.5) );
 }
 
+/* end of setting for all pages */
+
 header{
     max-width: 600px;
     margin: 0 auto;
@@ -44,7 +47,7 @@ h1 {
     text-align: center;
     font-weight: bold;
     font-size: 35px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     padding-top: 15px;
 }
 h2 {
@@ -62,15 +65,19 @@ h3{
 h4{
     color: rgb(61, 61, 170);
     font-weight: bold;
-    /* text-align: left; */
-    /* font-style: oblique; */
     font-size: 17px;
 }
+
+/* For the time format under experience page */
+
 .date{
     font-size: 13px;
     padding-top: 10px;
     text-align: left;
 }
+
+/* End of format */
+
 h6{
     font-size: 15px;
     font-weight: bold;
@@ -78,22 +85,15 @@ h6{
 }
 
 .heading{
-    display: flexbox;
+    display: flex;
     background: rgba(82, 184, 179, 0.8);
     font-weight: bold;
     font-size: 30px;
     text-align: center;
+    justify-content: center;
     padding: 15px;
 }
-/* 
-.leftCol{
-    float:left;
-    width:20%;
-}
-.rightCol{
-    float:left;
-    width:70%;
-} */
+
 .job{
     margin: 3%;
     margin-bottom: 8%;
@@ -110,9 +110,8 @@ ul{
 }
 
 .paragraph {
-    /* text-align: center; */
     font-size: 15px;
-    padding: 15px;
+    padding: 10px;
     
 }
 
@@ -127,7 +126,7 @@ button{
     padding-left:1%;
     text-align: justify;
 }
-/* START NAVBAR */
+/* START NAVBAR Design*/
 nav {
     background: rgba(82, 184, 179, 0.8);
     display: flex;
@@ -152,19 +151,14 @@ nav {
     height: auto;
     font-weight: bold;
 }
-nav a{
-    /* display: inline-block; */
-    /* margin-right: 70px; */
-    padding-top: 25px;
-    
-    position: relative;
-}
-/* Above sets the positon of the hover bar */
+
 nav a{
     color: #444;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 15px;
+    padding-top: 25px;
+    position: relative;
 }
 
 nav a:hover{
@@ -181,7 +175,6 @@ nav a::before {
     top: 15%;
     width: 0%;
   
-    /* transition: all ease-in-out 300ms; */
 }
   
 nav a:hover::before {
@@ -244,24 +237,36 @@ form {
     height: 80vh;
     max-width: fit-content;
     padding-top: 15px;
+    
 }
-  .container {
+
+img{
+    height: 85%;
+    width: 40%;
+    display: block;
+    object-fit: cover;
+    
+}
+
+.container {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
-    height: 80vh;
+    height: 70vh;
     max-width: fit-content;
     padding-top: 15px;
     }
 
-    .workexp{
-        color: rgb(61, 61, 170);
-        font-weight: bolder;
-        font-size: 30px;
-        text-align: center;
-        height: 8vh;
-        padding-top: 20px;
-
+.workexp{
+    display: flex;
+    color: rgb(61, 61, 170);
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    height: 10vh;
+    padding-top: 20px;
+        
     }
 /* } */
 @media only screen and (min-width: 600px) {
@@ -276,15 +281,31 @@ form {
         grid-template-columns: auto auto;
        
         }
-        .skills{
+    .skills{
             
-            grid-template-columns: auto auto;
-          }
+        grid-template-columns: auto auto;
+        }
     }
   @media only screen and (min-width: 768px) {
     /* tablets and desktop */
-}
-
+    .flexcontainer{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    .container {
+           
+         grid-template-columns: auto auto;
+           
+        }
+    .skills{
+               
+         grid-template-columns: auto auto;
+        }
+       
+    }
+        
 @media only screen and (max-width: 767px) and (orientation: portrait) {
     /* portrait phones */
 }
