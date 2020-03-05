@@ -10,10 +10,10 @@ html {
 }
 
 .mainhtml{
-    background: url("../image/scenic-view-of-mountain-during-daytime-1482927.jpg");
+    /* background: url("../image/scenic-view-of-mountain-during-daytime-1482927.jpg");
     background-size: cover;
     background-attachment: fixed;
-    height: 100%;
+    height: 100%; */
 }
 
 .new{
@@ -39,6 +39,7 @@ header{
     text-align: center;
     max-width: 600px;
     margin: 120px auto 64px;
+    margin-top: 300px;
     border-top: 2px solid grey;
     border-bottom: 2px solid grey;
 }
@@ -82,6 +83,10 @@ h6{
     font-size: 15px;
     font-weight: bold;
     color: rgb(61, 61, 170);
+}
+
+.contact{
+    margin-top: 100px;
 }
 
 .heading{
@@ -128,16 +133,19 @@ button{
 }
 /* START NAVBAR Design*/
 nav {
-    background: rgba(82, 184, 179, 0.8);
+    /* background: rgba(82, 184, 179, 0.8); */
+    background-color: rgba(0%, 55%, 55%, 0.8);
     display: flex;
     justify-content: space-around;
     position: fixed;
     left: 0;
     right: 0;
-    top: 15px;
+    top: 0;
     height: 10vh; 
     align-items: center;
-    padding: 32px; 
+    padding: 32px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
   
 /* nav::after {
@@ -184,7 +192,14 @@ nav a:hover::before {
 /* END NAVBAR DISPLAY */
 
 body{
+    background: url("../image/scenic-view-of-mountain-during-daytime-1482927.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
     margin: 10px;
+    margin-top: 0;
+    margin-left: 20%;
+    margin-right: 20%;
     padding: 5px;
 }
 .foot {
@@ -196,9 +211,9 @@ body{
     height: auto;
     color: rgb(11, 11, 58);
     text-align: center;
-    /* background-color: rgb(27, 174, 223); */
     background-color: rgba(27, 174, 223, 0.5);
     padding: 15px;
+    margin-left: ;
     
 }
 .foot a{
@@ -236,16 +251,37 @@ form {
     grid-template-rows: auto auto auto;
     height: 80vh;
     max-width: fit-content;
+    line-height: 2em;
     padding-top: 15px;
     
 }
 
-img{
-    height: 85%;
-    width: 40%;
+.skillset{
+
+    padding-left: 20%;
+}
+
+.skillset ul{
+    padding-left: 0;
+}
+
+.skillset li {
+    list-style: none;
+}
+
+
+
+img{    
+    height: auto;
+    width: 30%;
     display: block;
     object-fit: cover;
-    
+    padding-left: 20%;
+        
+}
+
+.Image h6 {
+    padding-left: 20%;
 }
 
 .container {
@@ -301,7 +337,7 @@ img{
         }
     .skills{
                
-         grid-template-columns: auto auto;
+         grid-template-columns: 50% 50%;
         }
        
     }
